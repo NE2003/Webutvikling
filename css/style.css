@@ -42,12 +42,15 @@ footer{
     display: flex;
     justify-content: flex-start;
     margin-top: 1rem;
-    flex-wrap: nowrap;
     overflow: hidden;
 }
 .product-card-slider{
     flex: 0 0 calc(25% - 10px);
     overflow: hidden;
+}
+
+.hide-overflow {
+    display: none;
 }
 .product-info{
     margin-left: 2.3rem;
@@ -60,7 +63,7 @@ footer{
 }
 .big-image img{
     height: 1000px;
-    width: 900px;
+    width: 1250px;
     border: 2px solid black;
 }
 
@@ -78,12 +81,12 @@ footer{
 
 .about-us-pic img{
     height: 300px;
-    width: 900px;
+    width: 1250px;
 }
 
 .promo-pic img {
     height: 1920px;
-    width: 900px;
+    width: 1250px;
 }
 .breakpoint {
     border-top: 6px solid #FFA500;
@@ -115,6 +118,7 @@ h2 {
 .about-us-text{
     display: block;
     margin-left: 2.3rem;
+    margin-right: 2.3rem;
 }
 
 .mobile-nav li{
@@ -139,9 +143,12 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 2.3rem;
+    margin-right: 5rem;
     margin-left: 2.3rem;
     padding-top: 1rem;
+}
+.picture-container{
+    display: none;
 }
 
 .filter-container select{
@@ -154,7 +161,7 @@ h2 {
 }
 .velg-størrelse{
     margin-left: 2.3rem;
-    width: 900px;
+    width: 1250px;
     height: 30px;
     color: black;
     font-size: 25px;
@@ -174,12 +181,12 @@ h2 {
 #heart-icon::after {
     margin-left: 1rem;
     color: red;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .rectangle-button {
     margin-left: 2.3rem;
-    width: 850px;
+    width: 1200px;
     height: 30px;
     background-color: black;
     color: white;
@@ -240,6 +247,7 @@ figcaption a {
         flex-direction: column;
         align-items: start;
         padding-top: 2.4rem;
+        margin-top: 3.5rem;
     }
     
     .filter-container select{
@@ -290,6 +298,24 @@ figcaption a {
     .product-card-slider{
         flex: 0 0 calc(16.66666666666667% - 10px);
         overflow: hidden;
+    }
+    .picture-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .preview-image img{
+        height: 200px;
+        width: 120px;
+    }
+    .promo-pic img {
+        height: 1000px;
+        width: 1920px ;
+    }
+
+    .about-us-pic img{
+        height: 300px;
+        width: 1920px;
     }
 
 }
