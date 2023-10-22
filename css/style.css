@@ -9,12 +9,32 @@
 }
 .product-image img{
     height: 400px;
-     width: 250px;
+    width: 250px;
+    border: 2px solid black;
 }
+.big-image img{
+    height: 1000px;
+    width: 900px;
+    border: 2px solid black;
+}
+
+.colour-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.small-image img{
+    height: 200px;
+    width: 100px;
+    border: 2px solid black;
+    margin-right: -40px;
+}
+
 .about-us-pic img{
     height: 300px;
     width: 900px;
 }
+
 .promo-pic img {
     height: 1920px;
     width: 900px;
@@ -37,6 +57,15 @@ h2 {
     margin-left: 2.3rem;
     margin-top: 2rem;
 }
+.bigger-product-brand {
+    font-size: 40px;
+}
+.color-title{
+    font-size: 30px;
+    margin-left: 2.3rem;
+    margin-top: 4rem;
+}
+
 .about-us-text{
     display: block;
     margin-left: 2.3rem;
@@ -78,6 +107,43 @@ h2 {
     background-color: white;
     border: 2px solid black;
 }
+.velg-størrelse{
+    margin-left: 2.3rem;
+    width: 900px;
+    height: 30px;
+    color: black;
+    font-size: 25px;
+    background-color: white;
+    border: 2px solid black;
+}
+.add-shoppingcart-container{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+#heart-icon::before {
+    margin-left: 1rem;
+    color: black;
+    font-size: 30px;
+}
+#heart-icon::after {
+    margin-left: 1rem;
+    color: red;
+    font-size: 50px;
+}
+
+.rectangle-button {
+    margin-left: 2.3rem;
+    width: 850px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none; 
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
 
 figcaption a {
     color: black;
