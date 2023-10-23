@@ -307,8 +307,8 @@ figcaption a {
         width: 120px;
     }
     .promo-pic img {
-        height: 1500px;
-        width: 1460px ;
+        max-width: 100%;
+        height: auto;
         object-fit: cover;
     }
 
