@@ -2,10 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="description" content="En nettbutikk for store og små som er ute etter pensko til viktige høytider.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title class="test">Skofabrikken</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style2.css">
     </head>
     <body>
         <div id="grid-container">
@@ -20,6 +22,7 @@
                             <li><a href="produkt.html">Pensko</a></li>
                             <li><a href="produkt.html">Sneakers</a></li>
                             <li><a href="produkt.html">Vedlikeholdsutstyr</a></li>
+                            <li><a href="analyse.html">Analyse</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -31,27 +34,28 @@
                     </section>
             </header>
             <aside class="aside">
-                <h2>Filtrering</h2>
+                <h2 class="filter">Filtrering</h2>
                 <div class="filter-container">
-                    <select>
+                    <label for="sorter"></label>
+                    <select id="sorter" name="sorter">
                         <option value="" disabled selected>Sorter</option>
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
                     </select>
-                    <select>
+                    <select id="sorter" name="sorter">
                         <option value="" disabled selected>Størrelse</option>
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
                     </select>
-                    <select>
+                    <select id="sorter" name="sorter">
                         <option value="" disabled selected>Pris</option>
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
                     </select>
-                    <select>
+                    <select id="sorter" name="sorter">
                         <option value="" disabled selected>Merker</option>
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
@@ -60,7 +64,7 @@
                 </div>
             </aside>
             <main class="main-content">
-                <h2>Produkter for Menn/Damer/Barn</h2>
+                <h1 class="filter">Produkter for Menn/Damer/Barn</h1>
                 <section class="product-container">
                     <section class="product-card">
                         <figure class="product-image">
@@ -214,7 +218,7 @@
             </main>
             <section class="secondary-content">
                 <section class="breakpoint"></section>
-                <h2>Utvalgte pensko</h2>
+                <h2 class="secondary-h2">Utvalgte pensko</h2>
                 <section class="product-container-slider">
                     <section class="product-card-slider">
                         <figure class="product-image">
@@ -265,7 +269,7 @@
                         </section>
                     </section>
                 </section>
-                <h2>Utvalgte sneakers</h2>
+                <h2 class="secondary-h2">Utvalgte sneakers</h2>
                 <section class="product-container-slider">
                     <section class="product-card-slider">
                         <figure class="product-image">

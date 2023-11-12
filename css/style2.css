@@ -29,8 +29,7 @@ footer{
 }
 
 .product-container{
-    display: flex;
-    justify-content: flex-start;
+    margin-left: 3rem;
     margin-top: 1rem;
     overflow: hidden;
 }
@@ -39,8 +38,8 @@ footer{
     overflow: hidden;
 }
 .product-container-slider{
-    display: flex;
-    justify-content: flex-start;
+    /* display flex */
+    margin-left: 3rem;
     margin-top: 1rem;
     overflow: hidden;
 }
@@ -48,7 +47,7 @@ footer{
     flex: 0 0 calc(25% - 10px);
     overflow: hidden;
 }
-
+/**/
 .hide-overflow {
     display: none;
 }
@@ -62,8 +61,8 @@ footer{
     border: 2px solid black;
 }
 .big-image img{
-    height: 1000px;
-    width: 1250px;
+    height: 100%;
+    width: 100%;
     border: 2px solid black;
 }
 
@@ -76,17 +75,17 @@ footer{
     height: 200px;
     width: 100px;
     border: 2px solid black;
-    margin-right: -40px;
+    margin-right: -65px;
 }
 
 .about-us-pic img{
     height: 600px;
-    width: 1250px;
+    width: 100%;
 }
 
 .promo-pic img {
     height: 1920px;
-    width: 90%;
+    width: 100%;
 }
 .breakpoint {
     border-top: 6px solid #FFA500;
@@ -98,19 +97,30 @@ footer{
     justify-content: flex-start;
     list-style: none;
 }
+
+.secondary-h2{
+    text-align: center;
+    margin-left: 0;
+}
+
+.filter{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 0;
+}
+
 h1{
-    font-size: 60px;
+    font-size: 3rem;
     margin-left: 2.3rem;
 }
 h2 {
     margin-left: 2.3rem;
     margin-top: 2rem;
 }
-.bigger-product-brand {
-    font-size: 40px;
-}
+
+
 .color-title{
-    font-size: 30px;
+    font-size: 1.5rem;
     margin-left: 2.3rem;
     margin-top: 4rem;
 }
@@ -129,24 +139,22 @@ h2 {
 }
 
 .mobile-nav a{
-    font-size: 40px;
+    font-size: 2rem;
     text-decoration: none;
     color: black;
 }
 #page-header{
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     background-color: #FFA500;
     color: black;
 }
 .filter-container{
     display: flex;
+    flex-direction: column;
     justify-content:left;
     align-items: center;
-    margin-right: 5rem;
-    margin-left: 1rem;
-    padding-top: 1rem;
 }
 .picture-container{
     display: none;
@@ -154,22 +162,14 @@ h2 {
 
 .filter-container select{
     margin-left: 20px;
+    margin-top: 20px;
     width: 200px;
     height: 40px; 
-    padding: 5px;
     color: black;
     background-color: white;
     border: 2px solid black;
 }
-.velg-størrelse{
-    margin-left: 2.3rem;
-    width: 1250px;
-    height: 30px;
-    color: black;
-    font-size: 25px;
-    background-color: white;
-    border: 2px solid black;
-}
+
 .add-shoppingcart-container{
     display: flex;
     margin-top: 1rem;
@@ -186,9 +186,19 @@ h2 {
     font-size: 30px;
 }
 
+.velg-størrelse{
+    margin-left: 2.3rem;
+    width: 84%;
+    height: 30px;
+    color: black;
+    font-size: 25px;
+    background-color: white;
+    border: 2px solid black;
+}
+
 .rectangle-button {
     margin-left: 2.3rem;
-    width: 1200px;
+    width: 72%;
     height: 30px;
     background-color: black;
     color: white;
@@ -210,6 +220,7 @@ figcaption a {
     text-decoration: none;
 }
 .icons-container{
+    margin-left: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -217,8 +228,9 @@ figcaption a {
     color: black;
 }
 .icons-container i{
+    margin-top: 10px;
     font-size: 20px;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 .search-bar-desktop{
     display: none;
@@ -242,6 +254,55 @@ figcaption a {
         align-items: center;
         justify-content: flex-start;
     }
+
+    
+.velg-størrelse{
+    margin-left: 2.3rem;
+    width: 1250px;
+    height: 30px;
+    color: black;
+    font-size: 25px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.rectangle-button {
+    margin-left: 2.3rem;
+    width: 1200px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none; 
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+    #page-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFA500;
+        color: black;
+    }
+    .logo{
+        color: black;
+        font-size:50px;
+        text-decoration: none;
+    }
+    .icons-container i{
+        margin-top: 10px;
+        font-size: 40px;
+        margin-right: 30px;
+    }
+
+    .secondary-h2{
+        text-align: left;
+        margin-left: 5.4rem;
+        margin-top: 2rem;
+    }
+    
     .adjust-desktop-right{
         display: flex;
         align-items: center;
@@ -269,15 +330,11 @@ figcaption a {
         margin-right: 1rem;
     }
     
-    .nav-items{
-        display: flex;
-        text-decoration: none;
-    }
     .nav-items {
         display: flex;
         list-style: none;
         margin-bottom: 0; 
-        margin-top: 10px; 
+        margin-top: 20px; 
     }
     
     .nav-items li {
@@ -289,7 +346,12 @@ figcaption a {
         text-decoration: none;
         color: black;
     }
-
+    .product-container{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 1rem;
+        overflow: hidden;
+    }
     .product-container-slider{
         display: flex;
         justify-content: flex-start;
@@ -321,5 +383,13 @@ figcaption a {
         height: 600px;
         width: 730;
     }
+    .bigger-product-brand {
+        font-size: 3.5rem;
+    }
 
+    .color-title{
+        font-size: 30px;
+        margin-left: 2.3rem;
+        margin-top: 4rem;
+    }
 }
