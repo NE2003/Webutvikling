@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="nb">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="En nettbutikk for store og små som er ute etter pensko til viktige høytider.">
+        <meta name="description" content="En side det vi analyserer nettsiden fra et UU og SEO perspektiv">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title class="test">Skofabrikken</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="css2/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style2.css">
     </head>
     <body>
         <div id="grid-container">
@@ -34,15 +34,155 @@
                     </section>
             </header>
             <aside class="aside">
-                <h1 class="mobile-intro">Hvor vil du begynne</h1>
-                <ul class="mobile-nav">
-                    <li><a href="produkt.html">Herre</a></li>
-                    <li><a href="produkt.html">Dame</a></li>
-                    <li><a href="produkt.html">Barn</a></li>
+                <ul class="reference-list">
+                    <h2 class="innhold">Innhold:</h2>
+                    <li class="reference-list-item"><a href="#google-trends">Google Trends</a></li>
+                    <li class="reference-list-item"><a href="#google-lighthouse">Google Lighthouse</a></li>
+                    <li class="reference-list-item"><a href="#webaim">Webaim - UU analyse</a></li>
+                    <li class="reference-list-item"><a href="#chat-gpt">ChatGpt - SEO og UU analyse</a></li>
+                    <li class="reference-list-item"><a href="#forbedringer">Forbedringer</a></li>
                 </ul>
             </aside>
             <main class="main-content">
-            
+                <h1>Oblig 4 - Webutvikling</h1>
+                  <section id="google-trends">
+                    <h2>Google Trends</h2>
+                    <article>
+                        <a class="about-us-text">Pensko - I følge google trends er søkeordet pensko relativt populært. Den gir ikke nøyaktige søkertall, men ved å se på grafen over søkeordet ser man at søkeordet blir brukt flere ganger hver time i løpet av den siste uken (29. okt - 5. Nov). Når vi ser på søke grafen i løpet av et år, ser man at ordet blir søkt mest på i perioden 7-13 mai, altså før 17.mai. Den perioden et ord blir søkt mest på får en poengsum på 100, og andre tall på andre perioder viser hvor populært ordet var iforhold til den beste perioden. Altså 50p = halvparten av søkene som i perioden mai. I måneden november - desember var pensko også ganske populært da folk sikkert skulle ha noe pene klær før jul. I denne perioden fikk pensko en score på 85. Resten av året ligger scoren rundt 20 og 40</a>
+                        <br><br> 
+                        <a class="about-us-text">Under relevante søk har vi “pensko dame”, “pensko herre”, og “pensko barn” så vi burde snevre inn søkene bedre ved å presisere kjønnet produktet er laget får. “Pensko dame” er 3x mer søkt på en “pensko barn”,  og 4x mer søkt på en “pensko herre”. Jeg fant ingen andre søkeord som var populære samtidig som de var relevante for min nettside.</a>
+                    </article>
+                  </section>
+                  <section id="google-lighthouse">
+                    <h2>Google Lighthouse</h2>
+                    <article>
+                        <a class="about-us-text">Jeg legger ved resultatene fra en lighthouse analyse på index.html. Alle sidene på nettstedet ga samme problemer med unntak av "Links are not crawlable" som bare gjelder index.html</a>
+                        <br>
+                        <figure class="lighthouse-pic">
+                            <img src="img\lighthouse1.png" alt="Bilde av lighthouse resulateter" />
+                        </figure>
+                        <figure class="lighthouse-pic">
+                            <img src="img\lighthouse2.png" alt="Bilde av lighthouse resulateter" />
+                        </figure>
+                        <figure class="lighthouse-pic">
+                            <img src="img\lighthouse3.png" alt="Bilde av lighthouse resulateter" />
+                        </figure>
+                        <figure class="lighthouse-pic">
+                            <img src="img\lighthouse4.png" alt="Bilde av lighthouse resulateter" />
+                        </figure>
+                        <figure class="lighthouse-pic">
+                            <img src="img\lighthouse5.png" alt="Bilde av lighthouse resulateter" />
+                        </figure>
+                    </article>
+                  </section>
+                  <section id="webaim">
+                        <h2>Webaim - UU analyse</h2>
+                        <article>
+                            <a class="about-us-text">Webaim scorer nettsiden men ganske bra fra et UU perspektiv. Eneste problemene som kom opp var mangel på deklarert språk, mangel på h1 på begge produktsidene. I tilegg manglet det labels på select objektene på produktsiden. Den kommenterer også på at nav-bar og ulike bilder alle linker til samme side, men dette kommer jeg meg ikke unna i dette prosjektet.</a>
+                            <br>
+                            <h4 class="about-us-text">Forside:</h4>
+                            <figure class="lighthouse-pic">
+                                <img src="img/webaim1.png" alt="Bilde av Webaim resulateter" />
+                            </figure>
+                            <h4 class="about-us-text">Produktside:</h4>
+                            <figure class="lighthouse-pic"> 
+                                <img src="img\webaim2.png" alt="Bilde av Webaim resulateter" />
+                            </figure>
+                            <h4 class="about-us-text">Produktside:</h4>
+                            <figure class="lighthouse-pic">
+                                <img src="img\webaim3.png" alt="Bilde av Webaim resulateter" />
+                            </figure>
+                        </article>
+                  </section>
+                  <section id="chat-gpt">
+                        <h2>ChatGpt - SEO og UU analyse</h2>
+                        <article>
+                            <a class="about-us-text">Prompten som ble gitt til GPT er: Kan du vurdere denne html koden for SEO og UU? Jeg ønsker også å vite hva jeg kan gjør for at det skal bli bedte (jeg ønsker ikke at du skal endre kode) Kan jeg få en score fra 1-100 på både SEO og UU?</a>
+                            <h4 class="about-us-text">Forside:</h4>
+                            <figure class="lighthouse-pic">
+                                <img src="img\chat1.png" alt="Bilde av ChatGpt resulateter for SEO" />
+                                <img src="img\chat2.png" alt="Bilde av ChatGpt resulateter for UU" />
+                            </figure>
+                            <h4 class="about-us-text">Produktside:</h4>
+                            <figure class="lighthouse-pic">
+                                <img src="img\chat3.png" alt="Bilde av ChatGpt resulateter for SEO" />
+                                <img src="img\chat4.png" alt="Bilde av ChatGpt resulateter for UU" />
+                            </figure>
+                            <h4 class="about-us-text">spesifiktProdukt:</h4>
+                            <figure class="lighthouse-pic">
+                                <img src="img\chat5.png" alt="Bilde av ChatGpt resulateter for SEO" />
+                                <img src="img\chat6.png" alt="Bilde av ChatGpt resulateter for UU" />
+                            </figure>
+                        </article>
+                  </section>
+                  <section>
+                    <a class="table">I denne tabellen vises poengsummer fra ulike programmer. Lighthouse er en score basert på SEO og er mellom 1-100. Webaim er antall errors per side. Chatgpt er en 1-100 vurdering på sidens SEO:</a>
+                    <br><br>
+                    <table class="table">
+                        <tr>
+                            <th></th>
+                            <th>Index</th>
+                            <th>Produkt</th>
+                            <th>spesifiktProdukt</th>
+                        </tr>
+                        <tr>
+                            <td>Lighthouse</td>
+                            <td>58</td>
+                            <td>67</td>
+                            <td>67</td>
+                        </tr>
+                        <tr>
+                            <td>Webaim</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>ChatGpt</td>
+                            <td>70</td>
+                            <td>89</td>
+                            <td>81</td>
+                        </tr>
+                    </table>
+                  </section>
+                  <section id="forbedringer">
+                    <h2>Forbedringer</h2>
+                    <article>
+                        <a class="about-us-text">Jeg startet med å fikse SEOen på nettsiden. Største problemet som sansynneligvis sto for mest poeng var at jeg manglet en viewport. I det jeg la inn en viewport på sidene mine ble mobilversjonen av alle sidene ødelagt. Designet var ikke særlig responsivt, selvom jeg tidligre hadde fått det til å se bra ut. Det er blitt gjort noen endringer for å fikse dette, i hovedsak størrelsesforholdet til bilder og andre objekter. Nettsiden bruker nå style2.css der jeg fikset det som trengtes. Når dette var gjort fikk jeg en boost på 25p på SEOen på hver side.</a>
+                        <br>
+                        <a class="about-us-text">For å fikse de siste problemene med SEOen la jeg inn en meta description på hver side, som ga meg 8p på hver side. Eneste problemet som sto igjen var index filen. Her påstår lighthouse at en link ikke er crawlable, men den referer til "om oss" teksten som ikke er lenket opp til noe i det hele tatt. Jeg fant aldri ut av grunnen til dette så problemet står det fortsatt.</a>
+                        <br>
+                        <a class="about-us-text">For å forbedre UU måtte jeg gjøre et par ting. Jeg deklarerte et språk på alle sidene, og passet på at alle sidene hadde en h1. Jeg måtte også legge til en label på alle select elementene på produktsiden.</a>
+                        <br><br>
+                        <table class="table">
+                            <tr>
+                                <th></th>
+                                <th>Index</th>
+                                <th>Produkt</th>
+                                <th>spesifiktProdukt</th>
+                            </tr>
+                            <tr>
+                                <td>Lighthouse</td>
+                                <td>92</td>
+                                <td>100</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Webaim</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                        <br><br>        
+                    </article>
+                  </section>
+                  <section class="Tilgjengelighet">
+                    <a class="about-us-text">Bruk av skjermleser fungerte ganske godt på nettstedet. Den klarte å uttale hvordan innhold det var på nesten hele siden. Eneste problemet den hadde var at den selvfølgelig ikke klarer å lese tekst inni et bilde. Bortsett fra det klarte jeg å få med meg innholdet av hele nettsiden med unntak av analyse siden (pga tekst bildene) ved bruk av skjermleseren</a>
+                    <br>
+                    <a class="about-us-text">Bruk av tastatur gikk også ganske bra. Jeg klarte å navigere igjennom hele nettsiden, og hadde klart å gjort et kjøp hvis funksjonaliteten hadde vært der. Eneste problemet jeg møtte på er at tastaturet navigerer innom hver eneste figcaption da disse refererer til nettsiden de har blitt hentet fra. Det blir en del ekstra klikk for å navigere igjennom alt.</a>
+                    <br>
+                </section>
             </main>
             <section class="secondary-content">
             </section>
